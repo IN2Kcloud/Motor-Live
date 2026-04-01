@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Motor Live</title>
+    <meta name="description" content="Motorcycles." />
+    <meta name="keywords" content="Motorcycles, road, highway, lights, speed" />
+    <meta name="author" content="EL-KABOOS" />
+    
+    <link rel="shortcut icon" href="./assets/pub-motorlive.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.typekit.net/uok8swb.css">
+    <link rel="stylesheet" href="base.css">
+
+    <script type="module" src="https://unpkg.com/three@0.160.0/build/three.module.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    </head>
+
+<body class="before-load">
+    <div class="loading">
+        <div class="load-skull">
+            <img class="load-skullcen" src="./assets/VM-Skull-II.webp"></img>
+            <div class="load-VMwrap">
+                <img class="load-VMcen" src="./assets/VANGUARDmarquee.webp" alt="">
+            </div>
+            <img class="load-flameI" src="./assets/VM-fire-loop-BW-II.gif"></img>
+            <img class="load-flameII" src="./assets/VM-fire-loop-BW-II.gif"></img>
+        </div>
+        <div class="load-counter">0</div>
+    </div>
+
+    <canvas id="grid-bg"></canvas>
+
+    <img class="motorlive" src="./assets/motorlive.png" alt="">
+
+    <div class="skull">
+        <img class="skullcen" src="./assets/VM-Skull-II.png"></img>
+        <div class="VMwrap">
+            <img class="VMcen" src="./assets/VANGUARDmarquee.png" alt="">
+        </div>
+        <img class="flameI" src="./assets/VM-fire-loop-BW-II.gif"></img>
+        <img class="flameII" src="./assets/VM-fire-loop-BW-II.gif"></img>
+        <img class="flameBW" src="./assets/VM-fire-loop-BW-II.gif"></img>
+        
+        <div class="marquee-trial-II">
+            <div class="marquee-trial-content-II">
+                <span>
+                    &nbsp; Découvrez tout l'univers de la moto à travers nos contenus variés et passionnants &nbsp; • &nbsp; réalisés par une équipe de journalistes experts &nbsp; • 
+                    &nbsp; Découvrez tout l'univers de la moto à travers nos contenus variés et passionnants &nbsp; • &nbsp; réalisés par une équipe de journalistes experts &nbsp; • 
+                    &nbsp; Découvrez tout l'univers de la moto à travers nos contenus variés et passionnants &nbsp; • &nbsp; réalisés par une équipe de journalistes experts &nbsp; • 
+                </span>
+            </div>
+        </div>
+        
+        <div class="marquee-trial">
+            <div class="marquee-trial-content">
+                <span>
+                    &nbsp; Découvrez tout l'univers de la moto à travers nos contenus variés et passionnants &nbsp; • &nbsp; réalisés par une équipe de journalistes experts &nbsp; • 
+                    &nbsp; Découvrez tout l'univers de la moto à travers nos contenus variés et passionnants &nbsp; • &nbsp; réalisés par une équipe de journalistes experts &nbsp; • 
+                    &nbsp; Découvrez tout l'univers de la moto à travers nos contenus variés et passionnants &nbsp; • &nbsp; réalisés par une équipe de journalistes experts &nbsp; • 
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="circular-text">
+        <div class="morph-text" id="morph-text">Motor Live</div>
+    </div>
+
+    <section class="content-section">
+        <div class="content-marquee top">
+            <div class="content-marquee-track">
+                <span> MOTOR • LIVE • TURBOS • DRIFT • SPEED • MOTOR • LIVE • TURBOS • DRIFT • SPEED • </span>
+            </div>
+        </div>
+
+        <div class="content-marquee bottom">
+            <div class="content-marquee-track">
+                <span> NEWS • TESTS • RIDES • GEAR • RACING • NEWS • TESTS • RIDES • GEAR • RACING • </span>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div>
+                <h1>Bienvenue sur Motorlive.tv</h1>
+                <p>Découvrez tout l'univers de la moto à travers nos contenus variés et passionnants, réalisés par une équipe de journalistes experts.</p>
+
+                <div class="mtv-block">
+                    <div class="items-wrapper">
+                        <div class="items slick video">
+                            <div class="flex-full item bigitem js-link">
+                                <a href="https://www.motoservices.com/" target="_blank">
+                                    <div class="title">motoservices.com</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Voici les différentes sections que vous pouvez explorer sur Motorlive.tv :</p>
+
+                <h2>Essais en vidéos des dernières motos</h2>
+                <p>Plongez au cœur des dernières nouveautés du monde moto avec nos essais vidéos détaillés. Nous testons les modèles les plus récents pour vous offrir des avis complets et impartiaux sur leur performance, leur confort et leur design. Que vous soyez intéressés par les motos sportives, les roadsters, les trails, les cruisers, les motos A2, les scooters ou les motos électriques, nos vidéos vous aideront à faire le meilleur choix.</p>
+
+                <div class="mtv-block">
+                    <div class="items-wrapper">
+                        <div class="items slick video">
+                            <div class="flex-full item bigitem js-link">
+                                <a href="https://www.motoservices.com/motorlive/" target="_blank">
+                                    <div class="title">Motor Live</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Tests d’équipements motard</h2>
+                <p>L'équipement est essentiel pour la sécurité et le confort du motard. Nos tests couvrent une large gamme de produits, des casques aux gants en passant par les vestes et les bottes. Nous évaluons les <a href="https://www.motoservices.com/accessoire-moto-equipement-moto.htm">équipements du motard</a> sur leur protection, leur durabilité and leur confort afin de vous fournir des recommandations fiables and précises. Nous traiteront également des équipements du motard plus modernes dont les airbags qui améliorent grandement la sécurité, ainsi que des intercom pour communiquer lors des voyages à plusieurs.</p>
+
+                <h2>Actualité de la compétition moto</h2>
+                <p>Restez informé des <a href="https://www.motoservices.com/competition.htm">dernières nouvelles du monde de la compétition moto</a>. Nous couvrons les championnats majeurs tels que <a href="https://moto-station.com/grand-prix">MotoGP</a>, <a href="https://moto-station.com/categorie/sport/world-superbike?univers=gp-racing">Superbike</a> and les rallyes-raid. Nos articles and vidéos vous offrent des analyses détaillées, des interviews exclusives and des résumés de courses pour ne rien manquer des performances de vos pilotes favoris.</p>
+
+                <h2>Salons motos en vidéos</h2>
+                <p>Les <a href="https://moto-station.com/tag/salon-de-la-moto">salons motos</a> sont des événements incontournables pour découvrir les nouvelles tendances and innovations. Nous vous proposons des reportages complets sur les principaux salons internationaux comme EICMA, le salon de Lyon and l’Alpes Motofestival dont nous sommes partenaires. Découvrez les nouveautés, les concepts futuristes and les annonces exclusives des constructeurs.</p>
+
+                <h2>Débats sur la moto</h2>
+                <p>Participez à nos débats animés autour de sujets variés qui touchent le monde de la moto. Que ce soit sur l'évolution des réglementations, les innovations technologiques ou les performances des pilotes, nos débats offrent des perspectives diverses and des discussions enrichissantes.</p>
+
+                <h2>Guides vidéos sur le permis</h2>
+                <p>Obtenir son <a href="https://moto-station.com/tag/permis-a2">permis moto</a> est une étape clé pour tout motard. Nos guides vidéos vous accompagnent tout au long de ce parcours, avec des conseils pratiques, des explications sur les différentes étapes and des astuces pour réussir votre examen du premier coup.</p>
+
+                <h2>Et bien plus encore</h2>
+                <p>Motorlive.tv ne s'arrête pas là ! Nous abordons également des sujets comme les road trips à moto, les clubs de motards, and les entretiens techniques pour entretenir votre deux-roues. Chaque contenu est conçu pour enrichir votre expérience de motard. Et comme nous ne sommes pas sectaires, nous traitons aussi les sujets Quad dont le rythme de publication va s’intensifier très bientôt.</p>
+
+                <h2>Nouvelles vidéos disponibles sur <a href="https://www.motoservices.com/">Motoservices.com</a></h2>
+                <p>Pour une expérience encore plus complète, retrouvez désormais nos vidéos sur le site Motoservices.com, rédigé par la même équipe de journalistes passionnés. vous accéderez ainsi tout aussi facilement à toutes nos vidéos avec en plus l’ensemble des articles détaillés de Motoservices.com.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-marquee">
+            <div class="footer-marquee-track">
+                <span>
+                    MOTORLIVE • SPEED • POWER • DRIFT • TURBO • MOTORLIVE • SPEED • POWER • DRIFT • TURBO •
+                </span>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-center">
+                <a>News</a>
+                <a>Tests</a>
+                <a>Racing</a>
+                <a>Gear</a>
+            </div>
+
+            <div class="footer-left">
+                <!--<h2 class="footer-logo">MotorLive</h2>-->
+                <img class="motorlivered" src="./assets/motorlivered.png" alt="">
+                <p class="footer-tagline">
+                    Built for speed. Designed for impact.
+                </p>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/motorlive.tv/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@motorlive"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@motorlive.tv_officiel"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <p class="footer-copy">© 2026 MotorLive</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="js/index.cad48f07.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script>
+        function magneticEffect(element, strength = 40, easing = 0.15, invert = false) {
+            let mouseX = 0, mouseY = 0;
+            let targetX = 0, targetY = 0;
+            const parent = element.closest(".logo");
+            if (!parent) return;
+
+            const baseTransform = window.getComputedStyle(element).transform === "none" 
+                ? "" 
+                : window.getComputedStyle(element).transform;
+
+            parent.addEventListener("mousemove", e => {
+                const rect = parent.getBoundingClientRect();
+                const relX = e.clientX - (rect.left + rect.width / 2);
+                const relY = e.clientY - (rect.top + rect.height / 2);
+                targetX = (relX / rect.width) * strength * (invert ? -1 : 1);
+                targetY = (relY / rect.height) * strength * (invert ? -1 : 1);
+            });
+
+            parent.addEventListener("mouseleave", () => {
+                targetX = 0;
+                targetY = 0;
+            });
+
+            function animate() {
+                mouseX += (targetX - mouseX) * easing;
+                mouseY += (targetY - mouseY) * easing;
+                gsap.set(element, {
+                    transform: `${baseTransform} translate(${mouseX}px, ${mouseY}px)`
+                });
+                requestAnimationFrame(animate);
+            }
+            animate();
+        }
+
+        const logoImg = document.querySelector(".logo img");
+        const logoLink = document.querySelector(".logo a");
+        if (logoImg) magneticEffect(logoImg, 35, 0.15);
+        if (logoLink) magneticEffect(logoLink, 20, 0.12, true);
+    </script>
+
+    <script type="module">
+        import gsap from "https://cdn.skypack.dev/gsap";
+        const morphText = document.getElementById("morph-text");
+        const words = ["Motor Live", "Motors", "Turbos", "Drifts"];
+        let wordIndex = 0;
+
+        function morphWords() {
+            gsap.to(morphText, {
+                duration: 0.5,
+                opacity: 0,
+                scale: 0.9,
+                ease: "power2.inOut",
+                onComplete: () => {
+                    wordIndex = (wordIndex + 1) % words.length;
+                    morphText.textContent = words[wordIndex];
+                    gsap.to(morphText, {
+                        duration: 0.5,
+                        opacity: 1,
+                        scale: 1,
+                        ease: "power2.inOut",
+                    });
+                },
+            });
+        }
+        setInterval(morphWords, 2500);
+        gsap.to(morphText, {
+            duration: 2,
+            scale: 1.05,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.inOut",
+        });
+    </script>
+
+    <script>
+        const skull = document.querySelector('.skull');
+        const strength = 50; 
+        const ease = 0.2; 
+        
+        let mouseX = 0, mouseY = 0;
+        let targetX = 0, targetY = 0;
+        
+        document.addEventListener('mousemove', (e) => {
+            if (!skull) return;
+            const rect = skull.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            mouseX = (e.clientX - centerX) / strength;
+            mouseY = (e.clientY - centerY) / strength;
+        });
+        
+        function animate() {
+            targetX += (mouseX - targetX) * ease;
+            targetY += (mouseY - targetY) * ease;
+            gsap.to(skull, {
+                x: targetX,
+                y: targetY,
+                duration: 0.5,
+                ease: "power2.out"
+            });
+            requestAnimationFrame(animate);
+        }
+        animate();
+
+        const spin = gsap.to(".VMcen", {
+            rotation: -360,
+            repeat: -1,
+            ease: "none",
+            duration: 20,
+            transformOrigin: "50% 50%",
+        });
+        
+        const skullCen = document.querySelector(".skullcen");
+        if (skullCen) {
+            skullCen.addEventListener("mouseenter", () => {
+                gsap.to(spin, { timeScale: 5, duration: 1, ease: "power2.out" });
+            });
+            skullCen.addEventListener("mouseleave", () => {
+                gsap.to(spin, { timeScale: 1, duration: 1.2, ease: "power2.inOut" });
+            });
+        }
+    </script>
+</body>
+</html>
