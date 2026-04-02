@@ -68,14 +68,15 @@ function finishLoading() {
 
   // 💀 skull disappears FIRST
   tl.to(".load-skull", {
+    y: -200,
     opacity: 0,
-    duration: 0.3,
+    duration: .5,
     ease: "power4.in"
   });
 
   // ⚡ counter follows AFTER
   tl.to(".load-counter", {
-    y: -200,
+    scale: 1.5,
     opacity: 0,
     duration: 0.6,
     ease: "power3.in"
