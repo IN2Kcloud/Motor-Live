@@ -157,7 +157,7 @@ function revealLanding() {
 
 
 // ========== VIDEO FORCE PLAY ========== //
-
+/*
 document.addEventListener("DOMContentLoaded", () => {
   const videos = document.querySelectorAll("video");
 
@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 500);
   });
 });
-
+*/
 // ===== SCROLL REVEAL =====
 document.addEventListener("DOMContentLoaded", () => {
 
